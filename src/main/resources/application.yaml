@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: catalog-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: catalog-service
+    description: Publishes approved controls as OSCAL catalogs and serves the Published catalogs API
